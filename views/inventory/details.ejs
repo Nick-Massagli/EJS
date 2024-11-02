@@ -1,0 +1,7 @@
+<% if (title) { %>
+    <h1 class="classification-title"><%= title %></h1>
+<% } else { 
+    res.redirect('/')
+} %>
+<%# message() %>
+<%- grid %>
