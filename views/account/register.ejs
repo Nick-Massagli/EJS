@@ -2,6 +2,19 @@
 <% if (title) { %>
     <h1><%= title %></h1>
 <% } %>
+
+<!-- Flash Messages -->
+<%- messages() %>
+
+<!-- Error Messages -->
+<% if (errors) { %>
+    <ul class="notice">
+   <% errors.array().forEach(error => { %>
+     <li><%= error.msg %></li>
+  <%  }) %>
+   </ul>
+  <% } %>
+  
 <!-- Registration Form -->
 <!-- <div class="registration-form">
     <form action="/account/registration" method="post">
