@@ -14,7 +14,7 @@
   <%  }) %>
    </ul>
   <% } %>
-  
+
 <!-- Registration Form -->
 <!-- <div class="registration-form">
     <form action="/account/registration" method="post">
@@ -38,17 +38,17 @@
             <!-- First Name -->
             <div class="form-group">
                 <label for="account_firstname">First Name: <span class="required">*</span></label>
-                <input type="text" name="account_firstname" id="account_firstname" required>
+                <input type="text" name="account_firstname" id="accountFirstname" required value="<%= locals.account_firstname %>">
             </div>
             <!-- Last Name -->
             <div class="form-group">
                 <label for="account_lastname">Last Name: <span class="required">*</span></label>
-                <input type="text" name="account_lastname" id="account_lastname" required>
+                <input type="text" name="account_lastname" id="account_lastname" required value="<%= locals.account_lastname %>">
             </div>
             <!-- Email -->
             <div class="form-group">
                 <label for="account_email">Email: <span class="required">*</span></label>
-                <input type="email" name="account_email" id="account_email" required>
+                <input type="email" name="account_email" id="account_email" required value="<%= locals.account_email %>">
             </div>
             <!-- Password -->
             <div class="form-group">
