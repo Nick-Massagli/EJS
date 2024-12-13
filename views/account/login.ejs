@@ -4,6 +4,14 @@
 <% } %>
 <!-- messages -->
 <%- messages() %>
+<!-- Error Messages -->
+<% if (errors) { %>
+    <ul class="notice">
+   <% errors.array().forEach(error => { %>
+     <li><%= error.msg %></li>
+  <%  }) %>
+   </ul>
+  <% } %>
 <!-- Login Form -->
 <div class="login-form">
     <form id="loginForm" action="/account/login" method="post">
